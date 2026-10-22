@@ -26,13 +26,39 @@
             </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="px-5 py-6">
+        <section class="grid gap-8 md:grid-cols-2">
+            <div>
+                <h1 class="text-2xl font-bold mb-4">Kontakt</h1>
+                <p class="mb-4">Imate pitanje, prijedlog za nabavu knjige ili želite postati član? Javite nam se!</p>
+                <ul class="space-y-2">
+                    <li><strong>Adresa:</strong> Ulica knjiga 12, 10000 Zagreb</li>
+                    <li><strong>Telefon:</strong> <a href="tel:+38510000000" class="hover:bg-teal-200 rounded">+385 1 000 0000</a></li>
+                    <li><strong>E-mail:</strong> <a href="mailto:info@knjiznica-peroz.example" class="hover:bg-teal-200 rounded">info@knjiznica-peroz.example</a></li>
+                </ul>
 
+                <h2 class="text-lg font-bold mt-6 mb-2">Radno vrijeme</h2>
+                <table class="border border-gray-400">
+                    <tr class="border-b border-gray-400"><td class="px-3 py-1">Pon – Pet</td><td class="px-3 py-1">08:00 – 20:00</td></tr>
+                    <tr class="border-b border-gray-400"><td class="px-3 py-1">Subota</td><td class="px-3 py-1">09:00 – 13:00</td></tr>
+                    <tr><td class="px-3 py-1">Nedjelja</td><td class="px-3 py-1">Zatvoreno</td></tr>
+                </table>
+            </div>
+
+            <form class="flex flex-col gap-3 border border-gray-400 rounded p-4">
+                <h2 class="text-lg font-bold">Pošaljite poruku</h2>
+                <label for="ime">Ime i prezime</label>
+                <input id="ime" type="text" placeholder="Ana Anić" class="border border-gray-400 rounded px-2 py-1">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="ana@primjer.hr" class="border border-gray-400 rounded px-2 py-1">
+                <label for="poruka">Poruka</label>
+                <textarea id="poruka" rows="5" placeholder="Željela bih predložiti nabavu knjige..." class="border border-gray-400 rounded px-2 py-1"></textarea>
+                <button type="submit" class="bg-rose-400 hover:bg-teal-200 rounded px-5 py-2">Pošalji</button>
+            </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="border-t border-gray-400 flex justify-center">
         <p>Knjižnica Peroz &copy; </p>
     </footer>
 
