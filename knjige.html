@@ -2,95 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=ž, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knjige - Knjižnica Peroz</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-mono">
-    <header class="sticky top-0 bg-white md:border-b border-gray-400">
-        <div class="mx-auto flex items-center justify-between bg-rose-400">
-            <div>
-                <a href="index.html" class="px-5 py-3 hover:bg-teal-200 rounded hover:animate-bounce sm:h-14 object-scale-down">Knjižnica Peroz</a>
-            </div>
-            <nav class="md:flex gap-5 right-0 top-0 sm:hidden">
-                        <a href="index.html" class="px-5 py-2 h-25 hover:bg-teal-200 rounded object-cover hover:animate-pulse">Početna</a>
-                        <a class="px-5 py-2 hover:bg-teal-200 rounded object-cover h-25 hover:animate-pulse">Knjige</a>
-                        <a href="kontakt.html" class="hover:animate-pulse px-5 py-2 hover:bg-teal-200 rounded object-cover h-25">Kontakt</a>
-
+<body class="font-mono bg-stone-50 text-stone-800">
+    <header class="sticky top-0 z-50 bg-rose-400/80 backdrop-blur shadow-sm">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-2 py-2">
+            <a href="index.html" class="text-xl md:text-2xl font-bold px-3 py-1 rounded-lg transition hover:-translate-y-0.5">Knjižnica Peroz</a>
+            <nav class="hidden md:flex gap-2">
+                <a href="index.html" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Početna</a>
+                <a aria-current="page" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800">Knjige</a>
+                <a href="kontakt.html" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontakt</a>
             </nav>
         </div>
-            <nav class="md:hidden border-b border-gray-400 bg-rose-400 py-2">
-                <a href="index.html" class="px-3 py-2 h-25 hover:bg-teal-200 rounded object-cover hover:animate-pulse">Početna</a>
-                <a class="px-3 py-2 hover:bg-teal-200 rounded object-cover h-25 hover:animate-pulse">Knjige</a>
-                <a href="kontakt.html" class="hover:animate-pulse px-3 py-2 hover:bg-teal-200 rounded object-cover h-25">Kontakt</a>
-            </nav>
+        <nav class="md:hidden max-w-6xl mx-auto flex gap-1 px-2 pb-2">
+            <a href="index.html" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Početna</a>
+            <a aria-current="page" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800">Knjige</a>
+            <a href="kontakt.html" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontakt</a>
+        </nav>
     </header>
 
-    <main class="px-5 py-6">
+    <main class="max-w-6xl mx-auto px-5 py-12">
         <section>
-            <h1 class="text-2xl font-bold mb-2">Naše knjige</h1>
-            <p class="mb-6">Izdvojeni naslovi iz našeg fonda. Za posudbu je potrebna važeća članska iskaznica.</p>
+            <p class="inline-flex items-center gap-2 rounded-full bg-white/70 shadow-sm px-4 py-1 text-sm uppercase tracking-widest text-teal-800">Iz našeg fonda</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mt-4">Naše knjige</h1>
+            <p class="mt-4 mb-10 max-w-prose">Izdvojeni naslovi iz našeg fonda. Za posudbu je potrebna važeća članska iskaznica.</p>
 
-            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                <article class="border border-gray-400 rounded p-4 hover:bg-teal-50 flex gap-4">
-                    <img src="images/na-drini-cuprija.jpg" alt="Naslovnica: Na Drini ćuprija" class="w-24 h-36 object-cover rounded shadow shrink-0">
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <article class="group bg-white rounded-2xl shadow-lg p-4 flex gap-4 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                    <img src="images/na-drini-cuprija.jpg" alt="Naslovnica: Na Drini ćuprija" class="w-24 h-36 object-cover rounded-lg shadow-md shrink-0 -rotate-3 transition duration-300 group-hover:rotate-0 group-hover:scale-105">
                     <div>
-                        <h2 class="text-lg font-bold">Na Drini ćuprija</h2>
-                        <p class="text-sm text-gray-600">Ivo Andrić · 1945.</p>
+                        <h2 class="text-xl font-bold leading-tight transition group-hover:text-teal-700">Na Drini ćuprija</h2>
+                        <p class="text-sm text-stone-500 mt-1">Ivo Andrić · 1945.</p>
                         <p class="mt-2">Roman koji kroz povijest jednog mosta prati živote ljudi kroz gotovo četiri stoljeća.</p>
-                        <p class="mt-3 text-sm"><span class="bg-teal-200 rounded px-2 py-1">Dostupno</span> Roman</p>
+                        <p class="mt-3 text-sm"><span class="bg-teal-200 rounded-full px-3 py-1">Dostupno</span> Roman</p>
                     </div>
                 </article>
-                <article class="border border-gray-400 rounded p-4 hover:bg-teal-50 flex gap-4">
-                    <img src="images/povratak-filipa-latinovicza.jpg" alt="Naslovnica: Povratak Filipa Latinovicza" class="w-24 h-36 object-cover rounded shadow shrink-0">
+                <article class="group bg-white rounded-2xl shadow-lg p-4 flex gap-4 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                    <img src="images/povratak-filipa-latinovicza.jpg" alt="Naslovnica: Povratak Filipa Latinovicza" class="w-24 h-36 object-cover rounded-lg shadow-md shrink-0 -rotate-3 transition duration-300 group-hover:rotate-0 group-hover:scale-105">
                     <div>
-                        <h2 class="text-lg font-bold">Povratak Filipa Latinovicza</h2>
-                        <p class="text-sm text-gray-600">Miroslav Krleža · 1932.</p>
+                        <h2 class="text-xl font-bold leading-tight transition group-hover:text-teal-700">Povratak Filipa Latinovicza</h2>
+                        <p class="text-sm text-stone-500 mt-1">Miroslav Krleža · 1932.</p>
                         <p class="mt-2">Slikar Filip vraća se u rodni kraj u potrazi za smislom i vlastitim identitetom.</p>
-                        <p class="mt-3 text-sm"><span class="bg-rose-200 rounded px-2 py-1">Posuđeno</span> Roman</p>
+                        <p class="mt-3 text-sm"><span class="bg-rose-200 rounded-full px-3 py-1">Posuđeno</span> Roman</p>
                     </div>
                 </article>
-                <article class="border border-gray-400 rounded p-4 hover:bg-teal-50 flex gap-4">
-                    <img src="images/segrt-hlapic.jpg" alt="Naslovnica: Čudnovate zgode šegrta Hlapića" class="w-24 h-36 object-cover rounded shadow shrink-0">
+                <article class="group bg-white rounded-2xl shadow-lg p-4 flex gap-4 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                    <img src="images/segrt-hlapic.jpg" alt="Naslovnica: Čudnovate zgode šegrta Hlapića" class="w-24 h-36 object-cover rounded-lg shadow-md shrink-0 -rotate-3 transition duration-300 group-hover:rotate-0 group-hover:scale-105">
                     <div>
-                        <h2 class="text-lg font-bold">Čudnovate zgode šegrta Hlapića</h2>
-                        <p class="text-sm text-gray-600">Ivana Brlić-Mažuranić · 1913.</p>
+                        <h2 class="text-xl font-bold leading-tight transition group-hover:text-teal-700">Čudnovate zgode šegrta Hlapića</h2>
+                        <p class="text-sm text-stone-500 mt-1">Ivana Brlić-Mažuranić · 1913.</p>
                         <p class="mt-2">Klasik dječje književnosti o malom šegrtu koji kreće u svijet i usput svima pomaže.</p>
-                        <p class="mt-3 text-sm"><span class="bg-teal-200 rounded px-2 py-1">Dostupno</span> Dječja</p>
+                        <p class="mt-3 text-sm"><span class="bg-teal-200 rounded-full px-3 py-1">Dostupno</span> Dječja</p>
                     </div>
                 </article>
-                <article class="border border-gray-400 rounded p-4 hover:bg-teal-50 flex gap-4">
-                    <img src="images/1984.jpg" alt="Naslovnica: 1984." class="w-24 h-36 object-cover rounded shadow shrink-0">
+                <article class="group bg-white rounded-2xl shadow-lg p-4 flex gap-4 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                    <img src="images/1984.jpg" alt="Naslovnica: 1984." class="w-24 h-36 object-cover rounded-lg shadow-md shrink-0 -rotate-3 transition duration-300 group-hover:rotate-0 group-hover:scale-105">
                     <div>
-                        <h2 class="text-lg font-bold">1984.</h2>
-                        <p class="text-sm text-gray-600">George Orwell · 1949.</p>
+                        <h2 class="text-xl font-bold leading-tight transition group-hover:text-teal-700">1984.</h2>
+                        <p class="text-sm text-stone-500 mt-1">George Orwell · 1949.</p>
                         <p class="mt-2">Distopija o totalitarnom društvu u kojem Veliki Brat nadzire svaki korak.</p>
-                        <p class="mt-3 text-sm"><span class="bg-teal-200 rounded px-2 py-1">Dostupno</span> Strani roman</p>
+                        <p class="mt-3 text-sm"><span class="bg-teal-200 rounded-full px-3 py-1">Dostupno</span> Strani roman</p>
                     </div>
                 </article>
-                <article class="border border-gray-400 rounded p-4 hover:bg-teal-50 flex gap-4">
-                    <img src="images/mali-princ.jpg" alt="Naslovnica: Mali princ" class="w-24 h-36 object-cover rounded shadow shrink-0">
+                <article class="group bg-white rounded-2xl shadow-lg p-4 flex gap-4 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                    <img src="images/mali-princ.jpg" alt="Naslovnica: Mali princ" class="w-24 h-36 object-cover rounded-lg shadow-md shrink-0 -rotate-3 transition duration-300 group-hover:rotate-0 group-hover:scale-105">
                     <div>
-                        <h2 class="text-lg font-bold">Mali princ</h2>
-                        <p class="text-sm text-gray-600">Antoine de Saint-Exupéry · 1943.</p>
+                        <h2 class="text-xl font-bold leading-tight transition group-hover:text-teal-700">Mali princ</h2>
+                        <p class="text-sm text-stone-500 mt-1">Antoine de Saint-Exupéry · 1943.</p>
                         <p class="mt-2">Poetska priča o prijateljstvu, ljubavi i onome što je očima nevidljivo.</p>
-                        <p class="mt-3 text-sm"><span class="bg-rose-200 rounded px-2 py-1">Posuđeno</span> Dječja</p>
+                        <p class="mt-3 text-sm"><span class="bg-rose-200 rounded-full px-3 py-1">Posuđeno</span> Dječja</p>
                     </div>
                 </article>
-                <article class="border border-gray-400 rounded p-4 hover:bg-teal-50 flex gap-4">
-                    <img src="images/kratka-povijest-vremena.jpg" alt="Naslovnica: Kratka povijest vremena" class="w-24 h-36 object-cover rounded shadow shrink-0">
+                <article class="group bg-white rounded-2xl shadow-lg p-4 flex gap-4 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+                    <img src="images/kratka-povijest-vremena.jpg" alt="Naslovnica: Kratka povijest vremena" class="w-24 h-36 object-cover rounded-lg shadow-md shrink-0 -rotate-3 transition duration-300 group-hover:rotate-0 group-hover:scale-105">
                     <div>
-                        <h2 class="text-lg font-bold">Kratka povijest vremena</h2>
-                        <p class="text-sm text-gray-600">Stephen Hawking · 1988.</p>
+                        <h2 class="text-xl font-bold leading-tight transition group-hover:text-teal-700">Kratka povijest vremena</h2>
+                        <p class="text-sm text-stone-500 mt-1">Stephen Hawking · 1988.</p>
                         <p class="mt-2">Pristupačan uvod u kozmologiju, crne rupe i nastanak svemira.</p>
-                        <p class="mt-3 text-sm"><span class="bg-teal-200 rounded px-2 py-1">Dostupno</span> Znanost</p>
+                        <p class="mt-3 text-sm"><span class="bg-teal-200 rounded-full px-3 py-1">Dostupno</span> Znanost</p>
                     </div>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer class="border-t border-gray-400 flex justify-center">
+    <footer class="border-t border-stone-300 flex justify-center px-5 py-6 text-sm text-stone-500">
         <p>Knjižnica Peroz &copy; </p>
     </footer>
 

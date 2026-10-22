@@ -2,63 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=ž, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - Knjižnica Peroz</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-mono">
-    <header class="sticky top-0 bg-white md:border-b border-gray-400">
-        <div class="mx-auto flex items-center justify-between bg-rose-400">
-            <div>
-                <a href="index.html" class="px-5 py-3 hover:bg-teal-200 rounded hover:animate-bounce sm:h-14 object-scale-down">Knjižnica Peroz</a>
-            </div>
-            <nav class="md:flex gap-5 right-0 top-0 sm:hidden">
-                        <a href="index.html" class="px-5 py-2 h-25 hover:bg-teal-200 rounded object-cover hover:animate-pulse">Početna</a>
-                        <a href="knjige.html" class="px-5 py-2 hover:bg-teal-200 rounded object-cover h-25 hover:animate-pulse">Knjige</a>
-                        <a class="hover:animate-pulse px-5 py-2 hover:bg-teal-200 rounded object-cover h-25">Kontakt</a>
-
+<body class="font-mono bg-stone-50 text-stone-800">
+    <header class="sticky top-0 z-50 bg-rose-400/80 backdrop-blur shadow-sm">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-2 py-2">
+            <a href="index.html" class="text-xl md:text-2xl font-bold px-3 py-1 rounded-lg transition hover:-translate-y-0.5">Knjižnica Peroz</a>
+            <nav class="hidden md:flex gap-2">
+                <a href="index.html" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Početna</a>
+                <a href="knjige.html" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Knjige</a>
+                <a aria-current="page" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800">Kontakt</a>
             </nav>
         </div>
-            <nav class="md:hidden border-b border-gray-400 bg-rose-400 py-2">
-                <a href="index.html" class="px-3 py-2 h-25 hover:bg-teal-200 rounded object-cover hover:animate-pulse">Početna</a>
-                <a href="knjige.html" class="px-3 py-2 hover:bg-teal-200 rounded object-cover h-25 hover:animate-pulse">Knjige</a>
-                <a class="hover:animate-pulse px-3 py-2 hover:bg-teal-200 rounded object-cover h-25">Kontakt</a>
-            </nav>
+        <nav class="md:hidden max-w-6xl mx-auto flex gap-1 px-2 pb-2">
+            <a href="index.html" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Početna</a>
+            <a href="knjige.html" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Knjige</a>
+            <a aria-current="page" class="relative px-3 md:px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 md:after:left-5 md:after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800">Kontakt</a>
+        </nav>
     </header>
 
-    <main class="px-5 py-6">
-        <section class="grid gap-8 md:grid-cols-2">
-            <div>
-                <h1 class="text-2xl font-bold mb-4">Kontakt</h1>
-                <p class="mb-4">Imate pitanje, prijedlog za nabavu knjige ili želite postati član? Javite nam se!</p>
-                <ul class="space-y-2">
-                    <li><strong>Adresa:</strong> Ulica knjiga 12, 10000 Zagreb</li>
-                    <li><strong>Telefon:</strong> <a href="tel:+38510000000" class="hover:bg-teal-200 rounded">+385 1 000 0000</a></li>
-                    <li><strong>E-mail:</strong> <a href="mailto:info@knjiznica-peroz.example" class="hover:bg-teal-200 rounded">info@knjiznica-peroz.example</a></li>
-                </ul>
+    <main class="max-w-6xl mx-auto px-5 py-12">
+        <p class="inline-flex items-center gap-2 rounded-full bg-white/70 shadow-sm px-4 py-1 text-sm uppercase tracking-widest text-teal-800">Javite nam se</p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mt-4">Kontakt</h1>
+        <p class="mt-4 mb-10 max-w-prose">Imate pitanje, prijedlog za nabavu knjige ili želite postati član? Javite nam se!</p>
 
-                <h2 class="text-lg font-bold mt-6 mb-2">Radno vrijeme</h2>
-                <table class="border border-gray-400">
-                    <tr class="border-b border-gray-400"><td class="px-3 py-1">Pon – Pet</td><td class="px-3 py-1">08:00 – 20:00</td></tr>
-                    <tr class="border-b border-gray-400"><td class="px-3 py-1">Subota</td><td class="px-3 py-1">09:00 – 13:00</td></tr>
-                    <tr><td class="px-3 py-1">Nedjelja</td><td class="px-3 py-1">Zatvoreno</td></tr>
-                </table>
+        <section class="grid gap-8 md:grid-cols-2">
+            <div class="flex flex-col gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">Gdje smo</h2>
+                    <ul class="space-y-2">
+                        <li><strong>Adresa:</strong> Ulica knjiga 12, 10000 Zagreb</li>
+                        <li><strong>Telefon:</strong> <a href="tel:+38510000000" class="text-teal-700 underline underline-offset-4 transition hover:text-teal-600">+385 1 000 0000</a></li>
+                        <li><strong>E-mail:</strong> <a href="mailto:info@knjiznica-peroz.example" class="text-teal-700 underline underline-offset-4 transition hover:text-teal-600 break-all">info@knjiznica-peroz.example</a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <h2 class="text-2xl font-bold px-6 pt-6 pb-4">Radno vrijeme</h2>
+                    <table class="w-full">
+                        <tr class="border-t border-stone-200"><td class="px-6 py-3">Pon – Pet</td><td class="px-6 py-3 text-right">08:00 – 20:00</td></tr>
+                        <tr class="border-t border-stone-200 bg-stone-50"><td class="px-6 py-3">Subota</td><td class="px-6 py-3 text-right">09:00 – 13:00</td></tr>
+                        <tr class="border-t border-stone-200"><td class="px-6 py-3">Nedjelja</td><td class="px-6 py-3 text-right text-rose-600">Zatvoreno</td></tr>
+                    </table>
+                </div>
             </div>
 
-            <form class="flex flex-col gap-3 border border-gray-400 rounded p-4">
-                <h2 class="text-lg font-bold">Pošaljite poruku</h2>
+            <form class="flex flex-col gap-3 bg-white rounded-2xl shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-2">Pošaljite poruku</h2>
                 <label for="ime">Ime i prezime</label>
-                <input id="ime" type="text" placeholder="Ana Anić" class="border border-gray-400 rounded px-2 py-1">
+                <input id="ime" type="text" placeholder="Ana Anić" class="border border-stone-300 rounded-lg px-3 py-2 bg-stone-50 transition focus:outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-200">
                 <label for="email">E-mail</label>
-                <input id="email" type="email" placeholder="ana@primjer.hr" class="border border-gray-400 rounded px-2 py-1">
+                <input id="email" type="email" placeholder="ana@primjer.hr" class="border border-stone-300 rounded-lg px-3 py-2 bg-stone-50 transition focus:outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-200">
                 <label for="poruka">Poruka</label>
-                <textarea id="poruka" rows="5" placeholder="Željela bih predložiti nabavu knjige..." class="border border-gray-400 rounded px-2 py-1"></textarea>
-                <button type="submit" class="bg-rose-400 hover:bg-teal-200 rounded px-5 py-2">Pošalji</button>
+                <textarea id="poruka" rows="5" placeholder="Željela bih predložiti nabavu knjige..." class="border border-stone-300 rounded-lg px-3 py-2 bg-stone-50 transition focus:outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-200"></textarea>
+                <button type="submit" class="self-start mt-2 bg-teal-700 text-white rounded-full px-6 py-3 transition hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-lg">Pošalji</button>
             </form>
+        </section>
+
+        <section class="mt-8 rounded-2xl shadow-lg overflow-hidden">
+            <iframe src="https://www.google.com/maps?q=Zagreb&output=embed" title="Karta: lokacija knjižnice" class="w-full h-80 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
-    <footer class="border-t border-gray-400 flex justify-center">
+    <footer class="border-t border-stone-300 flex justify-center px-5 py-6 text-sm text-stone-500">
         <p>Knjižnica Peroz &copy; </p>
     </footer>
 

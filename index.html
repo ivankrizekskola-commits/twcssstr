@@ -2,43 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=ž, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Početna - Knjižnica Peroz</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-mono">
-    <header class="sticky top-0 bg-white md:border-b border-gray-400">
-        <div class="mx-auto flex items-center justify-between bg-rose-400">
-            <div>
-                <a href="index.html" class="px-5 py-3 hover:bg-teal-200 rounded hover:animate-bounce sm:h-14 object-scale-down">Knjižnica Peroz</a>
-            </div>
-            <nav class="md:flex gap-5 right-0 top-0 sm:hidden">
-                        <a class="px-5 py-2 h-25 hover:bg-teal-200 rounded object-cover hover:animate-pulse">Početna</a>
-                        <a href="knjige.html" class="px-5 py-2 hover:bg-teal-200 rounded object-cover h-25 hover:animate-pulse">Knjige</a>
-                        <a id="kontakt" href="kontakt.html" class="hover:animate-pulse px-5 py-2 hover:bg-teal-200 rounded object-cover h-25">Kontakt</a>
-
+<body class="font-mono bg-stone-50 text-stone-800">
+    <header class="sticky top-0 z-50 bg-rose-400/80 backdrop-blur shadow-sm">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-2 py-2">
+            <a href="index.html" class="text-xl md:text-2xl font-bold px-3 py-1 rounded-lg transition hover:-translate-y-0.5">Knjižnica Peroz</a>
+            <nav class="hidden md:flex gap-2">
+                <a aria-current="page" class="relative px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-5 after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800">Početna</a>
+                <a href="knjige.html" class="relative px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-5 after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Knjige</a>
+                <a data-kontakt href="kontakt.html" class="relative px-5 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-5 after:right-5 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontakt</a>
             </nav>
         </div>
-            <nav class="md:hidden border-b border-gray-400 bg-rose-400 py-2">
-                <a class="px-3 py-2 h-25 hover:bg-teal-200 rounded object-cover hover:animate-pulse">Početna</a>
-                <a href="knjige.html" class="px-3 py-2 hover:bg-teal-200 rounded object-cover h-25 hover:animate-pulse">Knjige</a>
-                <a id="kontakt" href="kontakt.html" class="hover:animate-pulse px-3 py-2 hover:bg-teal-200 rounded object-cover h-25">Kontakt</a>
-            </nav>
+        <nav class="md:hidden max-w-6xl mx-auto flex gap-1 px-2 pb-2">
+            <a aria-current="page" class="relative px-3 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 after:bottom-1 after:h-0.5 after:bg-teal-800">Početna</a>
+            <a href="knjige.html" class="relative px-3 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Knjige</a>
+            <a data-kontakt href="kontakt.html" class="relative px-3 py-2 rounded-lg transition hover:bg-teal-200/60 after:absolute after:left-3 after:right-3 after:bottom-1 after:h-0.5 after:bg-teal-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100">Kontakt</a>
+        </nav>
     </header>
-    <br>
-    <main>
-        <section>
-            <figure class="h-30 w-30">
-                <img src="images/knjiznica.jpg" alt="Slika knjižnice iznutra" width="500" class="object-scale-down flex">
+
+    <main class="relative overflow-hidden">
+        <div class="pointer-events-none absolute -top-24 -left-24 h-80 w-80 rounded-full bg-rose-300/50 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-teal-300/40 blur-3xl"></div>
+
+        <section class="relative max-w-6xl mx-auto px-5 py-16 md:py-24 grid gap-14 md:grid-cols-2 items-center">
+            <div>
+                <h1 class="mt-4 text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-rose-500 via-rose-400 to-teal-600 bg-clip-text text-transparent">Knjižnica Peroz</h1>
+                <p class="mt-6">Postojimo od 1984. i sa svakom godinom sakupljamo sve više i više knjiga</p>
+                <p class="mt-4">Nadamo se da će vam se svidjeti naš odabir knjiga, a ako imate neke želje slobodno nas kontaktirajte <a id="ovdje" href="kontakt.html" class="text-teal-700 underline underline-offset-4 hover:text-teal-600">ovdje</a></p>
+                <a href="knjige.html" class="inline-block mt-8 bg-teal-700 text-white rounded-full px-6 py-3 shadow-lg shadow-teal-700/30 transition hover:bg-teal-600 hover:-translate-y-0.5 hover:shadow-xl">Pogledaj knjige →</a>
+            </div>
+
+            <figure class="group relative mx-4 md:mx-0">
+                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-rose-400 to-teal-500 rotate-3 transition duration-500 group-hover:rotate-6"></div>
+                <img src="images/knjiznica.jpg" alt="Slika knjižnice iznutra" class="relative w-full rounded-2xl shadow-2xl -rotate-2 transition duration-500 group-hover:rotate-0 group-hover:scale-105">
             </figure>
-            <p>Postojimo od 1984. i sa svakom godinom sakupljamo sve više i više knjiga</p>
-            <p>Nadamo se da će vam se svidjeti naš odabir knjiga, a ako imate neke želje slobodno nas kontaktirajte <a href="#kontakt">ovdje</a></p>
         </section>
     </main>
-    <br>
-    <footer class="border-t border-gray-400 flex justify-center">
+
+    <footer class="border-t border-stone-300 flex justify-center px-5 py-6 text-sm text-stone-500">
         <p>Knjižnica Peroz &copy; </p>
     </footer>
 
+    <script> <!--uz pomagalo-->
+        let timer;
+        document.getElementById('ovdje').addEventListener('click', (e) => {
+            e.preventDefault();
+            const links = document.querySelectorAll('[data-kontakt]');
+            clearTimeout(timer);
+            links.forEach((link) => link.classList.add('animate-bounce', 'bg-teal-200'));
+            timer = setTimeout(() => {
+                links.forEach((link) => link.classList.remove('animate-bounce', 'bg-teal-200'));
+            }, 1000);
+        });
+    </script>
 </body>
 </html>
